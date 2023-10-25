@@ -1,0 +1,13 @@
+pandas
+matplotlib
+xgboost
+mlflow
+fastapi
+uvicorn
+python-multipart
+scikit-posthocs
+scipy
+bentoml
+imbalanced-learn
+shap
+ipywidgets

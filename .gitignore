@@ -1,0 +1,13 @@
+/.vscode
+/mlruns
+/archive.zip
+/venv
+/notebook/Hipertension_Model
+/notebook/Kfold_experiments_2_2023-10-23_21-07-37
+/notebook/Kfold_experiments_2023-10-23_17-35-40
+/notebook/Kfold_experiments_2023-10-23_18-01-55
+/notebook/Kfold_experiments_2023-10-23_18-05-07
+/notebook/Kfold_experiments_2023-10-23_19-36-01
+/notebook/Kfold_experiments_stroke_2023-10-25_15-05-17
+/notebook/mlruns
+/notebook/Stroke_Model
