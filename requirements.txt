@@ -11,3 +11,4 @@ bentoml
 imbalanced-learn
 shap
 ipywidgets
+streamlit
