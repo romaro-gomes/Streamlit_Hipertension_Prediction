@@ -3,8 +3,8 @@ import pandas as pd
 import pickle
 
 from PIL import Image
-image_good=Image.open('good.jpg')
-image_worse=Image.open('bad.jpg')
+image_good=Image.open('./good.jpg')
+image_worse=Image.open('./bad.jpg')
 
 st.title('Hipertension Predict Model')
 st.markdown("The model's aim is to assist doctors in making decisions about patient health by utilizing clinical history and lifestyle data")
@@ -93,24 +93,20 @@ def hypertension_prediction():
     return features
 
 df=hypertension_prediction()
-st.write(df)
 
 if st.button('Predict'):
-    print(df)
     model=pickle.load(open('hypertension_model.pkl','rb'))
     predict=model.predict(df)   
-    print(predict)
-
 
     if predict == 0:
          
          st.image(image_good, caption='Health Blood System')
-         st.text("""
+         st.markdown("""
          The pataient's  lifestyle and clinical history indicate a healthylife. 
          """)
     else:
 
          st.image(image_worse, caption='You need help')
-         st.text("""
-         The patient's lifestyle and clinical history indicate the need for medical assistance."
+         st.markdown("""
+         The patient's lifestyle and clinical history indicate the need for medical assistance.
          """)
